@@ -9,6 +9,8 @@ from ....core.config import settings
 from ....scheams import invitation_Pydantic
 
 invi = APIRouter(tags=["帖子相关"])
+#最新的帖子id
+current_post_id = 1
 
 #图片写入——————————————————————————————————————————————————————————————————————————————
 

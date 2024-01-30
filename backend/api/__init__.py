@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from .app import app
-from ..core.config import settings
+from ..core.config import TORTOISE_ORM
 #___________________________________________#
 
 #中间件
@@ -16,5 +16,5 @@ all.include_router(app,prefix="/app")
 
 register_tortoise(
     app=all,
-    config=settings.config
+    config=TORTOISE_ORM
 )
